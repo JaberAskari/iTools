@@ -71,47 +71,14 @@ Sovellus on PC:lle.
 
 # Käsitemalli
 
-[v1](Image/iTool.JPG)
+[Versio 1](Image/iTool.JPG)
 
-```plantuml
-@startuml
+![](/Images/v1.png)
 
-User --{ Tool
-User --{ Transaction
-User --{ Transaction
-User --{ TRcompletion
-User --{ TRcompletion
-User --{ Comment
-ToolCategory --{ Tool
-Tool --{ Transaction
-Transaction --{ TRcompletion
-Transaction --{ Comment
-Comment --{ Comment
-
-@enduml
-```
-
-[v2](Image/iTool_v2.JPG)
+[Versio 2](Image/iTool_v2.JPG)
 
 Päätimme yhdistää TRcompletion taulun transaction tauluun, koska siihen olisin tullut yksi-yhteen yhteys. Lisäksi lisäsimme rating-taulun arvosteluita varten.
-
-```plantuml
-@startuml
-
-User --{ Tool
-User --{ Transaction
-User --{ Transaction
-User --{ Comment
-User --{ Rating
-User --{ Rating
-ToolCategory --{ Tool
-Tool --{ Transaction
-Tool --{ Comment
-Transaction --{ Rating
-Comment --{ Comment
-
-@enduml
-```
+![](/Images/v2.png)
 
 # Relaatiokaavio
 
