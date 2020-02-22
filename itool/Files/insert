@@ -1,0 +1,27 @@
+insert into user (userName, userSurname, userAddress, userEmail, userLocation, paymentMethod)
+values ('Samson', 'Azizyan', 'ainola 1 a 1, 40520 Jyväskylä', 'm3156@student.jamk.fi', 'Jyväskylä', 'Paypal'),
+('Jaber', 'Askari', '42700 Keuruu', 'm2947@gmail.com', 'Keuruu', 'Cash'),
+('Joel', 'Aalto', 'Ykköspesänkatu 1a 10, 40520 Jyväskylä', 'm2113@student.jamk.fi', 'Jyväskylä', 'Paypal'),
+('Matti', 'Mieskolainen', 'Dynamo kampus', 'matti.mieskolainen@jamk.fi', 'Jyväskylä', 'MasterCard');
+
+insert into toolCategory (toolCategoryName, toolCategoryDescription)
+values ('Ruuvimeisseli', 'Ihan ruuvimeisselit'),('Vasara', 'Ihan vasarat'),('Sähköporakoneet', 'Sähköllä toimivat porakoneet'),('Saha', 'Sahalla voi sahata');
+
+insert into tool (toolName, toolDescription, toolPrice, toolCondition, toolCategoryID, userOwnerID)
+values ('Ristipäinen ruuvimeisseli', 'keskikokoinen', 1.00, 'uudenveroinen', 1, 1),
+('Talttapäinen ruuvimeisseli', 'pieni', 0.50, 'huono', 1, 1),
+('Hitachi porakone', '2h akku', 3.00, 'hyvä', 3, 2),
+('Metallisaha', 'ohut', 1.50, 'uudenveroinen', 4, 3);
+
+insert into transaction (transactionStartDate, transactionPlannedEndDate, userOwnerID, userLesseeID, toolID)
+values ('2019-03-26 15:50:00', '2019-03-26 15:50:10', 2, 1, 2);
+insert into transaction (transactionStartDate, transactionPlannedEndDate, userOwnerID, userLesseeID, toolID)
+values ('2019-03-26 15:50:00', '2019-03-26 15:57:10', 2, 1, 1);
+
+
+insert into tr_completion (tr_completionID,userRating, ActualEndDate, returnCondition, transactionID, raterID, ratedID) 
+values (0, 3, '2019-03-29 15:50:10', 'good', 1, 1,2);
+insert into tr_completion (tr_completionID,userRating, ActualEndDate, returnCondition, transactionID, raterID, ratedID) 
+values (1, 3, '2019-03-29 15:50:10', 'good', 1, 2,1);
+
+
