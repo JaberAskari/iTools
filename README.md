@@ -73,12 +73,12 @@ Sovellus on PC:lle.
 
 [Versio 1](Image/iTool.JPG)
 
-![](/Images/v1.png)
+![](/Image/v1.png)
 
 [Versio 2](Image/iTool_v2.JPG)
 
 Päätimme yhdistää TRcompletion taulun transaction tauluun, koska siihen olisin tullut yksi-yhteen yhteys. Lisäksi lisäsimme rating-taulun arvosteluita varten.
-![](/Images/v2.png)
+![](/Image/v2.png)
 
 # Relaatiokaavio
 
